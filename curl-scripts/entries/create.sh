@@ -10,8 +10,15 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "entry": {
-      "mood": "'"${MOOD}"'",
-      "rating": "'"${RATING}"'",
+      "mood": [{
+      "happiness": "'"${HAPPINESS}"'",
+      "sadness": "'"${SADNESS}"'",
+      "anxiety": "'"${ANXIETY}"'",
+      "irritability": "'"${IRRITABILITY}"'",
+      "energetic": "'"${ENERGETIC}"'",
+      "calm": "'"${CALM}"'",
+      "confident": "'"${CONFIDENT}"'"
+    }],
       "dayDetails": "'"${DAYDETAILS}"'",
       "owner": "'"${OWNER}"'"
     }

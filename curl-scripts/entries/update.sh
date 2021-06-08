@@ -8,10 +8,17 @@ curl "${API}${URL_PATH}/${ID}" \
   --request PATCH \
   --header "Content-Type: application/json" \
 --header "Authorization: Bearer ${TOKEN}" \
---data '{
+  --data '{
     "entry": {
-      "mood": "'"${MOOD}"'",
-      "rating": "'"${RATING}"'",
+      "mood": [{
+      "happiness": "'"${HAPPINESS}"'",
+      "sadness": "'"${SADNESS}"'",
+      "anxiety": "'"${ANXIETY}"'",
+      "irritability": "'"${IRRITABILITY}"'",
+      "energetic": "'"${ENERGETIC}"'",
+      "calm": "'"${CALM}"'",
+      "confident": "'"${CONFIDENT}"'"
+    }],
       "dayDetails": "'"${DAYDETAILS}"'",
       "owner": "'"${OWNER}"'"
     }
