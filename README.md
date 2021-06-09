@@ -8,4 +8,4 @@ https://vast-coast-19457.herokuapp.com/
 ## Planning
 
 ### ERD
-![ERD](https://i.ibb.co/tC3BFT1/ERD.jpg)
+![ERD](https://i.ibb.co/HGmhcxq/Mood-Tracker-ERD.jpg)
