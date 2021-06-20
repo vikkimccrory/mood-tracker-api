@@ -45,12 +45,6 @@ const entrySchema = new mongoose.Schema({
       max: 10
     }
   }],
-  // rating: {
-  //   type: Number,
-  //   required: true,
-  //   min: 0,
-  //   max: 10
-  // },
   dayDetails: {
     type: String,
     required: false
@@ -65,51 +59,3 @@ const entrySchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('Entry', entrySchema)
-// Alternative schema??? Idk man
-//   happiness: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   sadness: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   anxiety: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   irritability: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   energetic: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   calm: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   },
-//   confident: {
-//     type: Number,
-//     required: true,
-//     min: 0,
-//     max: 10
-//   }
-// }],
-
-// type: String,
-// enum: ['happiness', 'sadness', 'anxiety', 'irritability', 'energetic', 'calm', 'confident'],
-// required: true

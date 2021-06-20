@@ -20,9 +20,6 @@ const router = express.Router()
 router.get('/entries', requireToken, (req, res, next) => {
   Entry.find()
     .then(entries => {
-      // `examples` will be an array of Mongoose documents
-      // we want to convert each one to a POJO, so we use `.map` to
-      // apply `.toObject` to each one
       return entries.map(entry => entry.toObject())
     })
     // respond with status 200 and JSON of the examples
